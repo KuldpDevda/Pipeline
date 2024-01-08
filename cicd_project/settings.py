@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6ne3imi_s-%7szw(7iq8jp(zka2on=pr%@%gf3be4rrd+hhg^1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -87,8 +87,8 @@ DATABASES = {
         'NAME': 'pipline',
         'USER': 'postgres',
         'PASSWORD': 'psql',
-        'HOST': 'localhost',
-        'PORT': 5432,
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }   
 

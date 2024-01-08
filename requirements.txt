@@ -10,6 +10,7 @@ postgres==4.0
 psycopg2-binary==2.9.9
 psycopg2-pool==1.1
 pytest==7.4.4
+python_requires = >=3.8
 pytest-django==4.7.0
 sqlparse==0.4.4
 tomli==2.0.1

@@ -17,6 +17,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Start PostgreSQL
+      run: sudo service postgresql start
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
@@ -30,6 +32,9 @@ jobs:
         pip install Django
         pip install pytest
         export DJANGO_SETTINGS_MODULE=cicd_project.settings
+    
+    - name: Create test database
+      run: python manage.py migrate
 
     - name: Run Tests
       env:

@@ -25,6 +25,12 @@ jobs:
         python-version: ${{ matrix.python-version }}
         retries: 3
         delay: 10
+         env:
+          DB_NAME: pipline
+          DB_USER: postgres
+          DB_PASSWORD: psql
+          DB_HOST: localhost
+          DB_PORT: 5432
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip

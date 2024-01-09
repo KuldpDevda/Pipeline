@@ -28,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install --upgrade Django==4.2.13
+        
     - name: Run Tests
       run: |
         python manage.py test

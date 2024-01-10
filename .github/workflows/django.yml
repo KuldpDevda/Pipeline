@@ -32,7 +32,8 @@ jobs:
 
     - name: Set up Django settings module
       run: |
-        echo "export DJANGO_SETTINGS_MODULE=your_project.settings" >> $GITHUB_ENV
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+        export DJANGO_SETTINGS_MODULE=cicd_project.settings
 
     - name: Run Tests
       run: |

@@ -1,7 +1,6 @@
 from django.test import Client
 import pytest
 
-
 def test_home_view():
     client = Client()
     response = client.get('/home/')

@@ -32,7 +32,7 @@ jobs:
 
     - name: Set up Django settings module
       run: |
-        export DJANGO_SETTINGS_MODULE=cicd_project.settings
+        export DJANGO_SETTINGS_MODULE=cicd_project.settings pytest
 
     - name: Run Tests
       run: |

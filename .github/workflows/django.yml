@@ -32,7 +32,7 @@ jobs:
 
     - name: Set up Django settings module
       run: |
-        echo "export DJANGO_SETTINGS_MODULE=your_project.settings" >> $GITHUB_ENV
+        echo "export DJANGO_SETTINGS_MODULE=cicd_project.settings" >> $GITHUB_ENV
 
     - name: Run Tests
       run: |
